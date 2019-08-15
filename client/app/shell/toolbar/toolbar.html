@@ -1,0 +1,12 @@
+<div class="md-toolbar-tools md-whiteframe-2dp" layout="row" layout-align="space-between center" ng-controller="ToolbarController">
+    <md-button class="md-icon-button" ng-click="toggleMenu()" aria-label="Sidenav" layout layout-align="center center">
+        <hamburglar ng-class="{'opened' : isNavIconOpened}" scale="0.5"></hamburglar>
+    </md-button>
+    <div layout="row" layout-align="center center">
+        <div layout-align="end center">
+        </div>
+        <md-button ng-click="share()">share</md-button>
+    </div>
+</div>
+
+

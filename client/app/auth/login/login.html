@@ -1,0 +1,32 @@
+<div layout="column" flex layout-align="center center" style="z-index: 1">
+    <md-card layout="column" layout-align="center center" class="login-card">
+        <md-card-title>
+            <div layout="row" layout-align="center center">
+                <span class="md-headline">Login</span>
+            </div>
+        </md-card-title>
+        <form class="form" name="loginForm" layout="column" layout-align="center center" layout-padding>
+            <md-input-container class="input-reverse md-accent" flex="85">
+                <label>ID</label>
+                <input ng-model="user.id" required name="userID" />
+                <div ng-messages="loginForm.userID.$error"
+                     ng-show="loginForm.userID.$invalid && loginForm.userID.$touched">
+                    <div ng-message="required">required</div>
+                </div>
+            </md-input-container>
+            <md-input-container class="input-reverse md-accent" flex="85">
+                <label>Password</label>
+                <input ng-model="user.password" type="password" required name="password" />
+                <div ng-messages="loginForm.password.$error"
+                     ng-show="loginForm.password.$invalid && loginForm.password.$touched">
+                    <div ng-message="required">required</div>
+                </div>
+            </md-input-container>
+            <div layout="row" layout-align="space-between">
+                <md-button class="md-raised md-accent" type="submit" ng-click="login(loginForm)" ng-disabled="loginForm.$invalid">
+                    <span>login</span>
+                </md-button>
+            </div>
+        </form>
+    </md-card>
+</div>

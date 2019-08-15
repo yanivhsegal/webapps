@@ -1,0 +1,8 @@
+.title{
+    text-shadow: 5px 2px #e2dee0;
+}
+footer{
+    position:fixed;
+    bottom:0px;
+    width:100%;
+}

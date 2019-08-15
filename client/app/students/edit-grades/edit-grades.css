@@ -1,0 +1,35 @@
+.modal-height {
+    max-height: 95%;
+    width:150%;
+}
+
+.modal-overflow {
+    overflow: hidden;
+}
+
+.grades-datepicker {
+    padding: 0;
+}
+
+.md-datepicker-input-container {
+    width: 100%;
+}
+
+.give-margin {
+    margin-top: 40px;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.add-grade {
+    min-height: 90px;
+}
+
+.hint-subject {
+    cursor: pointer;
+    color: lightgrey;
+    font-size: x-small;
+    text-decoration: underline;
+}
