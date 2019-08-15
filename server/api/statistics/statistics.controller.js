@@ -37,7 +37,7 @@ export async function decisionTree(req) {
 
     var dt = new DecisionTree(d, class_name, features);
     return dt.predict({
-        gender: "male",
+        gender: "female",
         avgGrade: 70
     });
 }

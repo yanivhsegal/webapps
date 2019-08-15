@@ -13,16 +13,12 @@ export function index(req) {
         role: {$in: ['editor', 'viewer']}
     };
 
-    if (req.query.name) {
-        req.query.name = JSON.parse(req.query.name);
+    if (req.query.first_name) {
+        query['first_name'] = {$regex: req.query.first_name, $options: 'i'};
+    }
 
-        if (req.query.first_name) {
-            query['first_name'] = {$regex: req.query.first_name, $options: 'i'};
-        }
-
-        if (req.query.last_name) {
-            query['last_name'] = {$regex: req.query.last_name, $options: 'i'};
-        }
+    if (req.query.last_name) {
+        query['last_name'] = {$regex: req.query.last_name, $options: 'i'};
     }
 
     if (req.query.filterId) {
